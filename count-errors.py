@@ -67,7 +67,8 @@ for read in bam:
 print '\t'.join(['query', 'read_type', 'read_len', 'align_len', 'unalign_len', 'matches', 
 	'mismatches', 'insertions', 'deletions', 'tot_errors'])
 for query in best_align:
-	read_type = query.split('_')[4]
+	#read_type = query.split('_')[4]
+	read_type  = "2D"
 	alen = best_align[query][0]
 	inferred_length = best_align[query][1]
 	cigar_prof = best_align[query][2]
